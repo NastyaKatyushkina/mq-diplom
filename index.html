@@ -9,51 +9,53 @@
 </head>
 <body>
   <header class="header">
-    <div class="heading">
-      <a class="link_logo" href="#">
-        <img src="svg/noemi-logo.svg" alt="Noem" class ="logo">
-      </a>          
-      <nav class="nav">
-        <ul class="nav_list">
-          <li class="nav_item nav_item--current">
-            <a class="nav_link" href="#">Главная</a>
-          </li>
-          <li class="nav_item">
-            <a class="nav_link" href="#">Посты</a>
-          </li>
-          <li class="nav_item">
-            <a class="nav_link" href="#">Статьи</a>
-          </li>
-          <li class="nav_item">
-            <a class="nav_link" href="#">Теги</a>
-          </li>
-          <li class="nav_item">
-            <a class="nav_link" href="#">Темы</a>
-          </li>
-          <li class="nav_item">
-            <a class="nav_link" href="#">Контакты</a>
-          </li>
-        </ul>
-        <button class="menu-btn">
+    <div class="container_header">
+      <div class="heading">
+        <a class="link_logo" href="#">
+          <img src="svg/noemi-logo.svg" alt="Noem" class ="logo">
+        </a>          
+        <nav class="nav">
+          <ul class="nav_list">
+            <li class="nav_item nav_item--current">
+              <a class="nav_link" href="#">Главная</a>
+            </li>
+            <li class="nav_item">
+              <a class="nav_link" href="#">Посты</a>
+            </li>
+            <li class="nav_item">
+              <a class="nav_link" href="#">Статьи</a>
+            </li>
+            <li class="nav_item">
+              <a class="nav_link" href="#">Теги</a>
+            </li>
+            <li class="nav_item">
+              <a class="nav_link" href="#">Темы</a>
+            </li>
+            <li class="nav_item">
+              <a class="nav_link" href="#">Контакты</a>
+            </li>
+          </ul>
+          <button class="menu-btn">
             <span class="burger_line"></span>
             <span class="burger_line"></span>
             <span class="burger_line"></span>
           </button>
-      </nav>    
-    </div>
-    <div class="header_title">
+        </nav>    
+      </div>
+      <div class="header_title">
         <h1 class="title">
-          Блог о творчестве, спорте, <br>
+          Блог о творчестве, спорте,
           и образе жизни
-      </h1>
-    </div>      
+        </h1>
+      </div>      
+    </div>    
   </header>    
   <div class="block_feedback">
     <section class="feedback">
       <div class="feedback_container">   
           <h2 class="feedback_top">ваш фидбэк</h2>
           <form class="feedback_form">
-              <div class="feedback_form_elect">
+              <div class="feedback_form_select">
                   <label class="feedback_select_group">
                       <span class="feedback_select_label">Как часто вы заходите на наш сайт?</span>
                           <select class="feedback_select">
@@ -65,15 +67,17 @@
                   </label>
               </div>
               <div class="feedback_form_radio">
-                  <label class="feedbac_radi_group"> 
-                      <span class="feedback_radio_label">Вы подписаны на  e-mail рассылку?</span>
-                          <input type="radio" class="radio hidden" name="feedback_radio_group"> 
-                          <span class="feedback_radio_group_text">да</span>
+                <span class="feedback_radio_label">Вы подписаны на e-mail рассылку?</span>
+                <div class="radio_group">
+                  <label class="feedback_radio_group"> 
+                    <input type="radio" class="radio hidden" name="feedback_radio_group"> 
+                    <span class="feedback_radio_group_text">Да</span>
                   </label>
                   <label class="feedback_radio_group"> 
                       <input type="radio"  class="radio hidden" name="feedback_radio_group">
-                      <span class="feedback_radio_group_text"> нет</span>
+                      <span class="feedback_radio_group_text">Нет</span>
                   </label> 
+                </div>  
               </div>
               <div class ="feedback_form_opinion">
                   <label class="feedback_group_opinion">
@@ -82,7 +86,9 @@
                   <textarea class="opiniop_field" placeholder="может быть больше рецептов?"></textarea>
                   <button class="feedback_button" type="submit">отправить</button>
               </div>
-              <button class="popup-close" type="button"> </button>
+              <button class="popup-close" type="button">
+                <span class="hidden">Закрыть окно</span>
+              </button>
           </form>
       </div>
     </section>
@@ -461,7 +467,9 @@
               <span class="hidden">Найти...</span>
               <input type="text" class="searche_field" placeholder="Найти...">
             </label>
-            <button type="button" class="searche_button"></button>
+            <button type="button" class="searche_button">
+              <span class="hidden">Кнопка поиска</span>
+            </button>
           </form>
         </div>          
         <div class="email_item">
@@ -508,149 +516,149 @@
           <ul class="list_themes">
             <li class="list_themes_item">
               <a class="list_themes_link" href="#">
-                Красота <sup class="themes_count">12</sup>
+                Красота <span class="themes_count">12</span>
               </a>
             </li>
             <li class="list_themes_item">
               <a class="list_themes_link" href="#">
-                Здоровье <sup class="themes_count">4</sup>
+                Здоровье <span class="themes_count">4</span>
               </a>
             </li>
             <li class="list_themes_item">
               <a class="list_themes_link" href="#">
-                Образ жизни <sup class="themes_count">145</sup>
+                Образ жизни <span class="themes_count">145</span>
               </a>
             </li>
             <li class="list_themes_item">
               <a class="list_themes_link" href="#">
-                Музыка <sup class="themes_count">28</sup>
+                Музыка <span class="themes_count">28</span>
               </a>
             </li>
             <li class="list_themes_item">
               <a class="list_themes_link" href="#">
-                Спорт <sup class="themes_count">62</sup>
+                Спорт <span class="themes_count">62</span>
               </a>
             </li>
             <li class="list_themes_item">
               <a class="list_themes_link" href="#">
-                Йога <sup class="themes_count">8</sup>
+                Йога <span class="themes_count">8</span>
               </a>
             </li>
           </ul>
         </div>   
       </aside>
     </div>
-    <section class="section_products">
-      <div class="container">
-        <h2 class="section_title">
-          Наши изделия
-        </h2>
-        <div class="products_wrapper">
-          <div class="product">
-            <div class="product_img">
-              <picture>
-                  <source media="(max-width: 640px)" srcset="img/shop-item-mobile1.jpg">
-                  <source media="(min-width: 641px) and (max-width: 1199px)" srcset="img/shop-item-tablet1.jpg"> 
-                  <source media="(min-width: 1200px)" srcset="img/shop-item-desk1.jpg">
-                  <img class="shop-img" src="img/shop-item-desk1.jpg" alt="Кастомная подушка">    
-                </picture>
-            </div>
-            <div class="product_body">
-              <div class="product_content">
-                <h2 class="product_content_title">
-                  Подушки на диван
-                </h2>
-                <div class="product_content_container">
-                  <p class="product_content_text">
-                    Набор из двух подушек с модными принтами. Видео о создании <a href="#" class="text_link">здесь</a>.
-                  </p>
-                </div>                
-              </div>
-              <div class="product_footer">
-                <div class="product_prices">
-                  <div class="product_price_old">
-                    <span class="product_price_value">1000</span>
-                    <span class="product_rub">₽</span>
-                  </div>
-                  <div class="product_price">
-                    <span class="product_price_value">800</span>
-                    <span class="product_rub">₽</span>
-                  </div>
-                </div>
-                <button class="product_button" type="button">В магазин</button>
-              </div>
-            </div>
+  </div>
+  <section class="section_products">
+    <div class="container">
+      <h2 class="section_title">
+        Наши изделия
+      </h2>
+      <div class="products_wrapper">
+        <div class="product">
+          <div class="product_img">
+            <picture>
+                <source media="(max-width: 640px)" srcset="img/shop-item-mobile1.jpg">
+                <source media="(min-width: 641px) and (max-width: 1199px)" srcset="img/shop-item-tablet1.jpg"> 
+                <source media="(min-width: 1200px)" srcset="img/shop-item-desk1.jpg">
+                <img class="shop-img" src="img/shop-item-desk1.jpg" alt="Кастомная подушка">    
+              </picture>
           </div>
-          <div class="product">
-            <div class="product_img">
-              <picture>
-                  <source media="(max-width: 640px)" srcset="img/shop-item-mobile2.jpg">
-                  <source media="(min-width: 641px) and (max-width: 1199px)" srcset="img/shop-item-tablet2.jpg"> 
-                  <source media="(min-width: 1200px)" srcset="img/shop-item-desk2.jpg">
-                  <img class="shop-img" src="img/shop-item-desk2.jpg" alt="Зайчик ручной работы">
-                </picture>
+          <div class="product_body">
+            <div class="product_content">
+              <h2 class="product_content_title">
+                Подушки на диван
+              </h2>
+              <div class="product_content_container">
+                <p class="product_content_text">
+                  Набор из двух подушек с модными принтами. Видео о создании <a href="#" class="text_link">здесь</a>.
+                </p>
+              </div>                
             </div>
-            <div class="product_body">
-              <div class="product_content">
-                <h2 class="product_content_title">
-                  Кукла «Зайчик»
-                </h2>
-                <div class="product_content_container">
-                    <p class="product_content_text">
-                    Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a href="#" class="text_link">весенняя серия постов</a> в блоге и несколько подкастов.
-                  </p>
-                </div>               
-              </div>
-              <div class="product_footer">
-                <div class="product_prices">
-                  <div class="product_price">
-                    <span class="product_price_value">3500</span>
-                    <span class="product_rub">₽</span>
-                  </div>
+            <div class="product_footer">
+              <div class="product_prices">
+                <div class="product_price_old">
+                  <span class="product_price_value">1000</span>
+                  <span class="product_rub">₽</span>
                 </div>
-                <button class="product_button" type="button">В магазин</button>
-              </div>
-            </div>
-          </div>
-          <div class="product">
-            <div class="product_img">
-              <picture>
-                  <source media="(max-width: 640px)" srcset="img/shop-item-mobile3.jpg">
-                  <source media="(min-width: 641px) and (max-width: 1199px)" srcset="img/shop-item-tablet3.jpg"> 
-                  <source media="(min-width: 1200px)" srcset="img/shop-item-desk3.jpg">
-                  <img class="shop-img" src="img/shop-item-desk3.jpg" alt="Шестиугольная рамка">
-                </picture> 
-            </div>
-            <div class="product_body">
-              <div class="product_content">
-                <h2 class="product_content_title">
-                  Шестиугольная рамка
-                </h2>
-                <div class="product_content_container">
-                  <p class="product_content_text">
-                    Необычная рамка для украшения дома из видео <a href="#" class="text_link">«Как сделать рамку из подручных средств за 30 минут»</a> 
-                    </p>
-                </div>                
-              </div>
-              <div class="product_footer">
-                <div class="product_prices">
-                  <div class="product_price product_price_old">
-                    <span class="product_price_value">500</span>
-                    <span class="product_rub">₽</span>
-                  </div>
-                  <div class="product_price">
-                    <span class="product_price_value">400</span>
-                    <span class="product_rub">₽</span>
-                  </div>
+                <div class="product_price">
+                  <span class="product_price_value">800</span>
+                  <span class="product_rub">₽</span>
                 </div>
-                <button class="product_button" type="button">В магазин</button>
               </div>
+              <button class="product_button" type="button">В магазин</button>
             </div>
           </div>
         </div>
-      </div> 
-    </section>
-  </div>
+        <div class="product">
+          <div class="product_img">
+            <picture>
+                <source media="(max-width: 640px)" srcset="img/shop-item-mobile2.jpg">
+                <source media="(min-width: 641px) and (max-width: 1199px)" srcset="img/shop-item-tablet2.jpg"> 
+                <source media="(min-width: 1200px)" srcset="img/shop-item-desk2.jpg">
+                <img class="shop-img" src="img/shop-item-desk2.jpg" alt="Зайчик ручной работы">
+              </picture>
+          </div>
+          <div class="product_body">
+            <div class="product_content">
+              <h2 class="product_content_title">
+                Кукла «Зайчик»
+              </h2>
+              <div class="product_content_container">
+                  <p class="product_content_text">
+                  Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a href="#" class="text_link">весенняя серия постов</a> в блоге и несколько подкастов.
+                </p>
+              </div>               
+            </div>
+            <div class="product_footer">
+              <div class="product_prices">
+                <div class="product_price">
+                  <span class="product_price_value">3500</span>
+                  <span class="product_rub">₽</span>
+                </div>
+              </div>
+              <button class="product_button" type="button">В магазин</button>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product_img">
+            <picture>
+                <source media="(max-width: 640px)" srcset="img/shop-item-mobile3.jpg">
+                <source media="(min-width: 641px) and (max-width: 1199px)" srcset="img/shop-item-tablet3.jpg"> 
+                <source media="(min-width: 1200px)" srcset="img/shop-item-desk3.jpg">
+                <img class="shop-img" src="img/shop-item-desk3.jpg" alt="Шестиугольная рамка">
+              </picture> 
+          </div>
+          <div class="product_body">
+            <div class="product_content">
+              <h2 class="product_content_title">
+                Шестиугольная рамка
+              </h2>
+              <div class="product_content_container">
+                <p class="product_content_text">
+                  Необычная рамка для украшения дома из видео <a href="#" class="text_link">«Как сделать рамку из подручных средств за 30 минут»</a> 
+                  </p>
+              </div>                
+            </div>
+            <div class="product_footer">
+              <div class="product_prices">
+                <div class="product_price product_price_old">
+                  <span class="product_price_value">500</span>
+                  <span class="product_rub">₽</span>
+                </div>
+                <div class="product_price">
+                  <span class="product_price_value">400</span>
+                  <span class="product_rub">₽</span>
+                </div>
+              </div>
+              <button class="product_button" type="button">В магазин</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </section>
   <footer class="footer">
     <div class="footer_wrapp">
       <div class="social_nets">
